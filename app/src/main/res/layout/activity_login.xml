@@ -1,0 +1,52 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_email"
+        android:hint="Email"
+        android:textSize="22dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="22dp"
+        android:layout_below="@id/edit_text_email"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edit_text_password"
+        android:text="Login"
+        android:id="@+id/button_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New user ?"
+        android:id="@+id/text_view_user"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/button_login"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_click_here"
+        android:layout_toRightOf="@id/text_view_user"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/button_login"
+        android:textStyle="bold"
+        android:text="Click here"
+        />
+</RelativeLayout>

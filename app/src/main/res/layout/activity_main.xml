@@ -1,23 +1,41 @@
-<LinearLayout android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
+    android:background="#104E8B"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Welcome To My App"
+        android:textStyle = "italic"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:gravity="center_horizontal"/>
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/button_login"
         android:text="Login"
-        android:layout_gravity="center"/>
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_corner"
+        android:layout_centerInParent="true"/>
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/button_register"
         android:text="Register"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_corner"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/button_login"
         android:layout_gravity="center"/>
 
-</LinearLayout>
+</RelativeLayout>

@@ -1,14 +1,18 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88ACE0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/edit_text_email"
         android:hint="Email"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
         android:textSize="22dp"
         android:layout_centerInParent="true"/>
 
@@ -16,18 +20,23 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="22dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#fff"
         android:layout_below="@id/edit_text_email"
         android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/edit_text_password"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_below="@id/edit_text_password"
         android:text="Login"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_corner"
         android:id="@+id/button_login"/>
 
     <TextView
@@ -47,6 +56,9 @@
         android:layout_centerInParent="true"
         android:layout_below="@id/button_login"
         android:textStyle="bold"
+        android:textColor="#00B2EE"
+        android:layout_marginLeft="10dp"
         android:text="Click here"
+        android:textSize="18dp"
         />
 </RelativeLayout>
